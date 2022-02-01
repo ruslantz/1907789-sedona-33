@@ -18,3 +18,9 @@ main {
   width: 1200px;
   height: 411px;
 }
+
+.catalog-hotels {
+  background-image: url("../images/background-catalog.jpg");
+  width: 1200px;
+  height: 408px;
+}
