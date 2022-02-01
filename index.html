@@ -36,7 +36,7 @@
             </a>
           </li>
           <li class="button">
-            <a class="button-grey" href="#">Хочу сюда!</a>
+            <a class="button button-grey" href="#">Хочу сюда!</a>
           </li>
         </ul>
 
@@ -47,7 +47,6 @@
       <section class="welcome">
         <div class="welcome-split">
           <h1 class="visually-hidden">Добро пожаловать в великолепную Седону</h1>
-          <!-- <img class="background-welcome" src=""> -->
           <img class="vector-welcome" alt="Welcome to the gorgeous Sedona
           'because the Grand Canyon sukcs'" src="/images/welcome.svg" width="458" height="352">
           <img class="divider" src="/images/divider.svg" width="1200" height="57" alt="">
@@ -69,7 +68,8 @@
              width="800" height="384">
             <ul class="advantages-advices">
               <li class="advices">
-                <img class="advices-icon" src="/images/icon-housing.svg" width="75" height="72" >
+                <img class="advices-icon" src="/images/icon-housing.svg" width="75" height="72">
+                <!-- я так понял это декоративная графика, и ее нужно в стили? -->
                 <h4 class="advices-title">Жильё</h4>
                 <p class="advices-description">Рекомендуем пожить<br>
                   в настоящем мотеле,<br>
@@ -139,9 +139,7 @@
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="newsletter-email">Email</label>
           <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-          <button class="button newsletter-button" type="submit">
-            <!--<span class="subscribe">Подписаться</span>-->Подписаться
-          </button>
+          <button class="button button-newsletter" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
