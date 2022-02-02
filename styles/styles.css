@@ -1,15 +1,52 @@
-body {
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+/* PT Sans полужирный */
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
 
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #242424;
+  width: auto;
+  background-color: #F2F2F2;
+  background-image: url("../images/background-shadow-png.png");
+  background-size: 100% auto;
 }
 
 main {
   text-align: center;
 }
 
+.wrap {
+  background-color: #ffffff;
+  vertical-align: middle;
+}
+.navigation-link {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: inherit;
+  background-color: inherit;
+  text-decoration: none;
+}
 .welcome-split {
   background-image: url("../images/index-background.jpg");
   width: 1200px;
   height: 485px;
+  vertical-align: inherit;
   /* добавил фон через стили или лучше добавить изображение в html? */
 }
 
