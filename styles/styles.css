@@ -85,6 +85,10 @@ main {
   background-color: #83B3D31F;
 }
 
+.advantages-item-light20 {
+  background-color: #83B3D333;
+}
+
 .advantages-item-blue {
   color: #ffffff;
   background-color: #83B3D3;
@@ -92,7 +96,17 @@ main {
 }
 
 .advices {
-  background: #83B3D31F;
+  background-color: #83B3D31F;
+  color: #333333;
+}
+
+.advices-title {
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.advices-white {
+  background-color: #ffffff;
 }
 
 .advantages-title {
@@ -100,7 +114,15 @@ main {
   line-height: 28px;
   text-transform: uppercase;
 }
-.search-hotel {
+
+.ineresting {
+  font-size: 30px;
+  line-height: 36px;
+  color: inherit;
+  background-color: inherit;
+}
+
+.newsletter {
   background-image: url("../images/background-newsletter.jpg");
   width: 1200px;
   height: 411px;
