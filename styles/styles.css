@@ -18,8 +18,8 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  font-weight: 400;
   color: #242424;
-  width: auto;
   background-color: #F2F2F2;
 }
 
@@ -42,12 +42,64 @@ main {
   text-decoration: none;
 }
 
+.button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* Не забыть убрать точку списка */
+
+.button-grey {
+  background-color: #756257;
+  text-align: center;
+}
 .welcome-split {
   background-image: url("../images/index-background.jpg");
-  width: 1200px;
+  /* width: 1200px; */
   height: 485px;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
+.slogan {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: inherit;
+  background-color: inherit;
+  text-decoration: none;
+}
+
+.advantages-header {
+  font-size: 22px;
+  line-height: 36px;
+  font-weight: inherit;
+  color: #333333;
+}
+
+.advantages-item {
+  background-color: #83B3D31F;
+}
+
+.advantages-item-blue {
+  color: #ffffff;
+  background-color: #83B3D3;
+
+}
+
+.advices {
+  background: #83B3D31F;
+}
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
 .search-hotel {
   background-image: url("../images/background-newsletter.jpg");
   width: 1200px;
