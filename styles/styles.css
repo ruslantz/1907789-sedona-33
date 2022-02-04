@@ -44,7 +44,7 @@ main {
 
 .button {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 21px;
   font-weight: 700;
   color: #FFFFFF;
   text-decoration: none;
@@ -52,6 +52,7 @@ main {
 /* Не забыть убрать точку списка */
 
 .button-grey {
+  line-height: 20px;
   background-color: #756257;
   text-align: center;
 }
@@ -92,7 +93,6 @@ main {
 .advantages-item-blue {
   color: #ffffff;
   background-color: #83B3D3;
-
 }
 
 .advices {
@@ -122,10 +122,58 @@ main {
   background-color: inherit;
 }
 
+.search-description {
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  background-color: inherit;
+}
+
+.search-hotel .button-grey {
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
 .newsletter {
   background-image: url("../images/background-newsletter.jpg");
-  width: 1200px;
   height: 411px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.newsletter-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.newsletter-description {
+  font-size: 22px;
+  line-height: 26px;
+  /* ? Нужно ли здесь и в подобных случаях указывыать background-color: #000000; */
+}
+
+.field {
+  color: #000000;
+}
+
+.button-blue {
+  background-color: #83B3D3;;
+}
+
+.button-newsletter {
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.footer-contacts-phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: inherit;
+  color: #000000;
 }
 
 .catalog-hotels {
