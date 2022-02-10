@@ -289,8 +289,6 @@ h4 {
   color: #ffffff;
   background-color: #000000;
   width: 1200px;
-  display: flex;
-  flex-wrap: wrap;
   padding-top: 35px;
 }
 /* Вторая страница заголовок */
@@ -317,6 +315,7 @@ h4 {
 /* Форма-фильтр */
 
 .catalog-filter {
+  width: 1200px;
   display: flex;
 }
 
@@ -325,6 +324,39 @@ h4 {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
+}
+
+.catalog-filter-infrastructure {
+  width: 150px;
+  margin: 0;
+  margin-right: 67px;
+  margin-left: 71px;
+  padding: 0;
+}
+
+.catalog-filter-type {
+  width: 180px;
+  margin: 0;
+  margin-right: auto;
+  padding: 0;
+}
+
+.catalog-filter-price {
+  width: 287px;
+  margin: 0;
+  margin-right: 81px;
+  padding: 0;
+}
+
+.catalog-filter-button {
+  display: flex;
+  flex-direction: column;
+  margin-right: 72px;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
 }
 
 .button-reset {
