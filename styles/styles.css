@@ -160,7 +160,7 @@ h4 {
 
 .advantages-list {
   display: flex;
-
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -437,7 +437,7 @@ h4 {
 
 .pagination-inner {
   display: flex;
-  width: 1057;
+  width: 1057px;
   margin: 0 auto;
   flex-wrap: wrap;
 }
