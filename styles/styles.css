@@ -160,7 +160,7 @@ h4 {
 
 .advantages-list {
   display: flex;
-  flex-wrap: wrap;
+
   margin: 0;
   padding: 0;
 }
@@ -291,13 +291,13 @@ h4 {
   width: 1200px;
   padding-top: 35px;
 }
+
 /* Вторая страница заголовок */
 .inner-header-title {
   font-size: 60px;
   line-height: 68px;
   margin-bottom: 0;
 }
-
 
 .inner-header {
   width: 100%;
@@ -315,10 +315,10 @@ h4 {
 /* Форма-фильтр */
 
 .catalog-filter {
-  width: 1200px;
+  width: 1057px;
   display: flex;
+  margin: 0 auto;
 }
-
 
 .catalog-filter-title {
   font-size: 20px;
@@ -328,9 +328,8 @@ h4 {
 
 .catalog-filter-infrastructure {
   width: 150px;
-  margin: 0;
+  margin-top: 0px;
   margin-right: 67px;
-  margin-left: 71px;
   padding: 0;
 }
 
@@ -351,12 +350,16 @@ h4 {
 .catalog-filter-button {
   display: flex;
   flex-direction: column;
-  margin-right: 72px;
+  justify-content: flex-end;
 }
 
 .catalog-filter-list {
   margin: 0;
   padding: 0;
+}
+
+.button-filter {
+  margin-bottom: 20px;
 }
 
 .button-reset {
@@ -366,6 +369,18 @@ h4 {
   text-transform: none;
   background: none;
   border: none;
+  margin-bottom: 83px;
+}
+
+.sorting {
+  width: 1057px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.catalog-sorting {
+  width: 350px;
+  margin-right: auto ;
 }
 
 .meets {
@@ -381,6 +396,25 @@ h4 {
   font-size: 18px;
   line-height: 23px;
   color: #333333;
+  width: 287px;
+  margin: o;
+  padding: 0;
+  margin-right: 81px;
+}
+
+.hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1056px;
+  margin: 0 auto;
+}
+
+.hotel-card {
+  width: 339px;
+}
+
+.hotel-card+.hotel-card {
+  margin-right: 18px;
 }
 
 .hotel-card-title {
@@ -401,9 +435,17 @@ h4 {
   text-align: center;
 }
 
+.pagination-inner {
+  display: flex;
+  width: 1057;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
 .pagination-show-more {
   font-size: 20px;
   line-height: 26px;
+  flex-grow: 1;
 }
 
 .pagination-current {
