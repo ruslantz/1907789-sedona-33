@@ -129,13 +129,17 @@ h4 {
   width: 1200px;
   height: 485px;
   background-repeat: no-repeat;
+  padding-top: 51.4px;
 }
 
-.divider /* псевдоэлемент */{
-  background-image: url("../images/divider.svg");
+.welcome-split::after {
+  content: url("../images/divider.svg");
   width: 1200px;
   height: 57px;
+  margin-top: auto;
+
 }
+
 
 
 .slogan {
@@ -297,17 +301,22 @@ h4 {
   line-height: 26px;
 }
 
-.page-footer {
+.page-footer-container {
+  width: 1200px;
   display: flex;
   margin: 0 auto;
 }
 
-.footer-social-list {
-  display: flex;
-  margin: 0 auto;
-  padding: 0;
+.footer-social {
+  margin-right: auto;
   width: 130px;
 }
+
+.footer-logo {
+  width: 115px;
+  margin-left: auto;
+}
+
 
 .footer-contacts-phone {
   font-size: 40px;
@@ -485,6 +494,10 @@ h4 {
 .pagination-current {
   color: #000000;
   background: #F2F2F2;
+}
+
+.newsletter-inner {
+  text-align: center;
 }
 
 .newsletter-inner .newsletter-description {
