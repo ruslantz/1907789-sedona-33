@@ -148,14 +148,14 @@ h4 {
   margin-top: auto;
 }
 
-
-
 .slogan {
+  display: inline-block;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
   background-color: inherit;
+  margin-bottom: 31px;
 }
 
 .advantages-header {
