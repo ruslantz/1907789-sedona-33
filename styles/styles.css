@@ -173,12 +173,19 @@ h4 {
 }
 
 .advantages-item {
-  width: 400px;;
-  background-color: #83B3D31F;
+  width: 400px;
 }
 
-.advantages-item-light20 {
+.advantages-item:nth-child(4) {
   background-color: #83B3D333;
+}
+
+.advantages-item:nth-child(3) {
+  background: #83B3D31F;
+}
+
+.advantages-item:nth-child(5) {
+  background: #83B3D31F;
 }
 
 .container-item-blue {
@@ -214,7 +221,7 @@ h4 {
   color: #000000;
 }
 
-.advices-white {
+.advices:nth-child(2n) {
   background-color: #ffffff;
 }
 
