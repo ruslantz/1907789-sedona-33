@@ -39,6 +39,17 @@ h4 {
   margin-top: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .wrap {
   width: 1200px;
   margin: 0 auto;
@@ -56,6 +67,7 @@ h4 {
   margin: 0 auto;
   font-size: 18px;
 }
+
 .main-index {
   text-align: center;
   line-height: 21px;
@@ -70,13 +82,15 @@ h4 {
   display: flex;
   width: 1060px;
   margin: 0 auto;
-  /* здесь пытался сделать чтобы лого накрывало следующий блок */
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
   margin: 0;
   padding: 0;
-  width: 450px;
+  list-style-type: none;
 }
 
 .navigation-list-user {
@@ -85,10 +99,12 @@ h4 {
 }
 
 .navigation-logo {
-  margin: 0;
-  margin-right: 30px;
-  padding: 0;
+  display: flex;
+  align-items: center;
   width: 139px;
+  margin-bottom: -5px;
+  /* лого ушёл под фон wrap */
+  margin-right: 30px;
 }
 
 .navigation-link {
