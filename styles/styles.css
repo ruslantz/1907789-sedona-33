@@ -436,11 +436,6 @@ h4 {
   font-style: normal;
 }
 
-/* Страница каталога контейнер "стакан" */
-.main-inner-container {
-  width: 1056px;
-}
-
 .catalog-hotels {
   background-image: url("../images/background-catalog.jpg");
   background-size: 100% auto;
@@ -453,6 +448,7 @@ h4 {
 
 /* Вторая страница заголовок */
 .inner-header-title {
+  display: block;
   font-size: 60px;
   line-height: 68px;
   margin-bottom: 0;
@@ -465,10 +461,14 @@ h4 {
 
 /* Хлебные крошки */
 .breadcrumbs {
-  font-size: 16px;
-  line-height: 21px;
+  display: flex;
+  margin: 0;
   padding: 0;
   margin-top: 5px;
+  margin-bottom: 45px;
+  font-size: 16px;
+  line-height: 21px;
+  list-style-type: none;
 }
 
 /* Форма-фильтр */
@@ -490,6 +490,7 @@ h4 {
   margin-top: 0px;
   margin-right: 67px;
   padding: 0;
+  border: 0;
 }
 
 .catalog-filter-type {
@@ -497,6 +498,7 @@ h4 {
   margin: 0;
   margin-right: auto;
   padding: 0;
+  border: 0;
 }
 
 .catalog-filter-price {
@@ -504,17 +506,20 @@ h4 {
   margin: 0;
   margin-right: 81px;
   padding: 0;
+  border: 0;
 }
 
 .catalog-filter-button {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+
 }
 
 .catalog-filter-list {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .button-filter {
