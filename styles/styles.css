@@ -444,6 +444,7 @@ h4 {
   background-color: #000000;
   width: 1200px;
   padding-top: 35px;
+  margin-bottom: 44px;
 }
 
 /* Вторая страница заголовок */
@@ -455,7 +456,6 @@ h4 {
 }
 
 .inner-header {
-  width: 100%;
   margin-left: 71px;
 }
 
@@ -469,6 +469,10 @@ h4 {
   font-size: 16px;
   line-height: 21px;
   list-style-type: none;
+}
+
+.breadcrumbs-link {
+  margin-right: 26px;
 }
 
 /* Форма-фильтр */
@@ -487,6 +491,7 @@ h4 {
 
 .catalog-filter-infrastructure {
   width: 150px;
+  margin: 0;
   margin-top: 0px;
   margin-right: 67px;
   padding: 0;
@@ -512,6 +517,7 @@ h4 {
 .catalog-filter-button {
   display: flex;
   flex-direction: column;
+  width: 160px;
   justify-content: flex-end;
 
 }
@@ -540,6 +546,18 @@ h4 {
   width: 1057px;
   display: flex;
   margin: 0 auto;
+  margin-bottom: 53px;
+}
+
+.sorting .button {
+  width: 48px;
+  height: 48px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+}
+
+.sorting .button:not(:last-child) {
+  margin-right: 8px;
 }
 
 .catalog-sorting {
@@ -561,9 +579,13 @@ h4 {
   line-height: 23px;
   color: #333333;
   width: 287px;
-  margin: o;
+  margin: 0;
   padding: 0;
   margin-right: 81px;
+}
+
+.filter-result {
+  margin-bottom: 64px;
 }
 
 .hotel-list {
@@ -572,6 +594,7 @@ h4 {
   width: 1056px;
   margin: 0 auto;
   padding: 0;
+  list-style-type: none;
 }
 
 .hotel-card {
@@ -606,13 +629,38 @@ h4 {
   width: 1057px;
   margin: 0 auto;
   flex-wrap: wrap;
+  margin-bottom: ;
 }
 
 .pagination-show-more {
+  display: block;
   font-size: 20px;
   line-height: 26px;
-  flex-grow: 1;
+  width: 620px;
+  margin: 0 auto 60px;
 }
+
+.pagination {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.pagination-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-sizing: border-box;
+  width: 55px;
+  height: 55px;
+}
+
 
 .pagination-current {
   color: #000000;
@@ -621,6 +669,11 @@ h4 {
 
 .newsletter-inner {
   text-align: center;
+  padding-top: 73px;
+}
+
+.newsletter-inner .newsletter-title {
+  margin-bottom: 46px;
 }
 
 .newsletter-inner .newsletter-description {
