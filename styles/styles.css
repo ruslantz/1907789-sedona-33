@@ -566,6 +566,7 @@ h4 {
 }
 
 .meets {
+  margin: 0;
   font-size: 30px;
   line-height: 39px;
   font-weight: 700;
@@ -629,7 +630,6 @@ h4 {
   width: 1057px;
   margin: 0 auto;
   flex-wrap: wrap;
-  margin-bottom: ;
 }
 
 .pagination-show-more {
