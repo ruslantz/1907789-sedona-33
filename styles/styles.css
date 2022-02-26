@@ -605,7 +605,7 @@ h4 {
   margin-right: 18px;
 }
 
-.hotel-card:nth-child(3n+3) {
+.hotel-card:nth-child(3n) {
   margin-right: 0;
 }
 
