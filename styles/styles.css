@@ -579,9 +579,12 @@ h4 {
   font-size: 18px;
   line-height: 23px;
   color: #333333;
-  width: 287px;
   margin: 0;
   padding: 0;
+}
+
+.select-sort {
+  width: 287px;
   margin-right: 81px;
 }
 
@@ -590,8 +593,10 @@ h4 {
 }
 
 .hotel-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  row-gap: 10px;
+  column-gap: 18px;
   width: 1056px;
   margin: 0 auto;
   padding: 0;
@@ -599,27 +604,47 @@ h4 {
 }
 
 .hotel-card {
-  box-sizing: border-box;
-  width: 340px;
+  display: grid;
   padding: 20px;
-  margin-right: 18px;
+  row-gap: 16px;
 }
 
-.hotel-card:nth-child(3n) {
-  margin-right: 0;
+.hotel-card-image {
+  margin-bottom: 16px;
 }
 
 .hotel-card-title {
   font-size: 24px;
   line-height: 31px;
   text-align: left;
+  margin: 0;
 }
 
 .frame-hotel-price {
+  margin: 0;
   color: #333333;
 }
 
+.frame-button {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.frame-hotel {
+  display: inline-block;
+  width: 133px;
+  margin-right: 25px;
+}
+
+.frame-stars {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
 .rating {
+  width: 160px;
   color: #333333;
   background: #F2F2F2;
   font-size: 16px;
@@ -632,6 +657,7 @@ h4 {
   width: 1057px;
   margin: 0 auto;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .pagination-show-more {
@@ -646,9 +672,9 @@ h4 {
   display: flex;
   padding: 0;
   margin: 0;
+  margin-right: auto;
   list-style-type: none;
 }
-
 
 .pagination-item:not(:last-child) {
   margin-right: 8px;
@@ -664,10 +690,16 @@ h4 {
   padding-bottom: 17px;
 }
 
-
 .pagination-current {
   color: #000000;
   background: #F2F2F2;
+}
+
+.select-number {
+  margin-left: 51px;
+  width: 160px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .newsletter-inner {
