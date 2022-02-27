@@ -610,6 +610,7 @@ h4 {
 }
 
 .hotel-card-image {
+  object-fit: contain;
   margin-bottom: 16px;
 }
 
