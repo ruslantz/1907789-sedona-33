@@ -376,13 +376,15 @@ h4 {
 }
 
 .field-container {
+  display: flex;
+  width: 800px;
+  margin: 0 auto;
   /* https://itchief.ru/html-and-css/styling-text-input */
 }
 
 .field {
   color: #000000;
-  text-decoration: none;
-  position: relative;
+  width: 600px;
 }
 
 .button-blue {
@@ -392,6 +394,7 @@ h4 {
 .button-newsletter {
   font-size: 20px;
   line-height: 26px;
+  width: 200px;
 }
 
 .page-footer-container {
