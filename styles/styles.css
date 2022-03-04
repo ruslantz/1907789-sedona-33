@@ -112,6 +112,10 @@ h4 {
 .navigation-logo-sedona {
   position: absolute;
 }
+
+.navigation-item {
+  position: relative;
+}
 .navigation-link {
   display: block;
   padding: 20px 17px 19px;
@@ -123,12 +127,17 @@ h4 {
   background-color: inherit;
 }
 
-.navigation-link-current {
-  border-bottom: 2px solid #756257;
-  padding-left: 0;
-  padding-right: 0;
-  margin: 0 17px -1px;
+.navigation-link-current::after {
+  position: absolute;
+  right: 17px;
+  bottom: 0;
+  margin-bottom: -1px;
+  left: 17px;
+  height: 2px;
+  background-color: #756257;
+  content: "";
 }
+
 
 .navigation-user .navigation-link {
   min-width: 18px;
@@ -144,6 +153,7 @@ h4 {
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .button .button-grey {
@@ -388,7 +398,11 @@ h4 {
 }
 
 .button-blue {
-  background-color: #83B3D3;;
+  background-color: #83B3D3;
+}
+
+.button-favourites-current {
+  background-color: #7DB54F;
 }
 
 .button-newsletter {
@@ -565,7 +579,6 @@ h4 {
   width: 48px;
   height: 48px;
   box-sizing: border-box;
-  /* border: 2px solid #000000; */
 }
 
 .sorting .button:not(:last-child) {
