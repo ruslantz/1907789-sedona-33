@@ -118,6 +118,7 @@ h4 {
 }
 .navigation-link {
   display: block;
+  position: relative;
   padding: 20px 17px 19px;
   font-size: 20px;
   line-height: 26px;
@@ -144,7 +145,18 @@ h4 {
   min-height: 18px;
 }
 
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #000000;
+}
+
 .button {
+  display: inline-block;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 21px;
@@ -154,10 +166,14 @@ h4 {
   border: none;
   cursor: pointer;
   border-radius: 4px;
+  box-sizing: border-box;
+  padding-top: 9px;
+  padding-bottom: 9px;
 }
 
-.button .button-grey {
-  padding: 9px 15px 8px;
+.navigation-link.button-grey {
+  padding-left: 15px;
+  padding-right: 15px;
   border-radius: 4px;
   font-size: 16px;
   line-height: 20px;
@@ -342,7 +358,8 @@ h4 {
 .button-search {
   width: 575px;
   margin: 0 auto;
-  padding: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   margin-bottom: 93px;
   border-radius: 10px;
 }
@@ -393,8 +410,17 @@ h4 {
 }
 
 .field {
+  font-family: "PT Sans", sans-serif;
+  line-height: 26px;
+  font-size: 18px;
   color: #000000;
   width: 600px;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  padding-left: 22px;
+  padding-right: 19px;
+  background-color: #F2F2F2;
+  box-sizing: border-box;
 }
 
 .button-blue {
@@ -406,9 +432,12 @@ h4 {
 }
 
 .button-newsletter {
+  padding-top: 17px;
+  padding-bottom: 17px;
   font-size: 20px;
   line-height: 26px;
   width: 200px;
+  border-radius: 0 10px 10px 0;
 }
 
 .page-footer-container {
@@ -437,11 +466,34 @@ h4 {
 }
 
 .footer-social-item {
+  position: relative;
   width: 24px;
   height: 24px;
   margin-right: 19.5px;
   box-sizing: border-box;
 }
+
+.footer-social-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #83B3D3;
+}
+
+.footer-social-link:hover {
+  fill: #68A2CA;
+}
+/*
+Доработать
+.footer-social-link:focus {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #83B3D3;
+  border-radius: 10px;
+} */
 
 .footer-logo {
   width: 115px;
@@ -500,6 +552,17 @@ h4 {
 .breadcrumbs-link {
   margin-right: 26px;
 }
+
+.breadcrumbs-item {
+  position: relative;
+}
+
+.breadcrumbs-item:not(:first-child)::before {
+  content: url(../images/breadcrumbs.svg);
+  position: absolute;
+  left: -15px;
+}
+
 
 /* Форма-фильтр */
 
