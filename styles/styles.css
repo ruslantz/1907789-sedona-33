@@ -132,6 +132,21 @@ h4 {
   color: #756257;
 }
 
+.navigation-link:active {
+  color: #7562574D;
+}
+
+.navigation-link:active::after  {
+  position: absolute;
+  right: 17px;
+  bottom: 0;
+  margin-bottom: -1px;
+  left: 17px;
+  height: 2px;
+  background-color: #756257;
+  content: "";
+}
+
 .navigation-link-current::after {
   position: absolute;
   right: 17px;
@@ -162,6 +177,11 @@ h4 {
 .navigation-icon:hover {
   fill: #756257;
 }
+
+.navigation-icon:active {
+  fill: #7562574D;
+}
+
 
 .button {
   display: inline-block;
@@ -634,6 +654,12 @@ h4 {
   margin-bottom: 13px;
 }
 
+.control {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
 .catalog-filter-infrastructure {
   width: 150px;
   margin: 0;
@@ -643,12 +669,25 @@ h4 {
   border: 0;
 }
 
+.control-input[type="checkbox"] {
+  border-radius: 4px;
+  /* не работает ?? */
+}
+
 .catalog-filter-type {
   width: 180px;
   margin: 0;
   margin-right: auto;
   padding: 0;
   border: 0;
+}
+
+.control-input {
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  margin-right: 19px;
+  cursor: pointer;
 }
 
 .catalog-filter-price {
@@ -678,6 +717,19 @@ h4 {
   margin-bottom: 21px;
   padding-top: 13px;
   padding-bottom: 13px;
+}
+
+.button-filter:hover {
+  background-color: #68A2CA;
+}
+
+.button-filter:focus {
+  outline: 3px solid #ffffff;
+}
+
+.button-filter:active {
+  outline: none;
+  opacity: 0.3;
 }
 
 .button-reset {
