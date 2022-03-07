@@ -1050,8 +1050,8 @@ h4 {
 .select-number {
   margin-left: 51px;
   width: 160px;
-  /* padding-top: 10px;
-  padding-bottom: 10px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 17px;
 }
 
