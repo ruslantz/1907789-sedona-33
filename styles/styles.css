@@ -115,7 +115,7 @@ h4 {
 .navigation-link {
   display: block;
   position: relative;
-  padding: 20px 17px 19px;
+  /* padding: 20px 17px 19px; */
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
