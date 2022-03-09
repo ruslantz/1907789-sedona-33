@@ -110,7 +110,7 @@ h4 {
 }
 
 .navigation-logo-sedona {
-  position: absolute;
+  z-index: 1;
 }
 
 .navigation-item {
