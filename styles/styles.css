@@ -102,15 +102,11 @@ h4 {
 }
 
 .navigation-logo {
+  position: relative;
   display: flex;
   width: 139px;
   margin-bottom: -5px;
-  /* лого ушёл под фон wrap */
   margin-right: 30px;
-}
-
-.navigation-logo-sedona {
-  z-index: 1;
 }
 
 .navigation-item {
