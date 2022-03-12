@@ -517,7 +517,7 @@ h4 {
 }
 
 
-.field:invalid {
+.field:invalid:not(:focus):not(:placeholder-shown) {
   background-color: #FFFFFF;
   box-shadow: inset 0 0 0 2px #FF5757;
 }
@@ -1003,7 +1003,7 @@ h4 {
   opacity: 0.6;
 }
 
-.hotel-card-image:focus {
+a:focus .hotel-card-image {
   outline: 3px solid #83B3D3;
   /* рамка не появляется */
 }
