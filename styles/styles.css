@@ -136,16 +136,6 @@ h4 {
   color: #7562574D;
 }
 
-.navigation-link:active::after  {
-  position: absolute;
-  right: 17px;
-  bottom: 0;
-  margin-bottom: -1px;
-  left: 17px;
-  height: 2px;
-  background-color: #756257;
-  content: "";
-}
 
 .navigation-link-current::after {
   position: absolute;
@@ -575,7 +565,7 @@ h4 {
   display: flex;
   width: 1056px;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 25px 0;
   align-items: center;
 }
 
@@ -588,9 +578,9 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-top: 8px;
   padding: 0;
   list-style-type: none;
+  margin-left: -10px;
 }
 
 .footer-social-item:nth-child(3n) {
@@ -598,9 +588,6 @@ h4 {
 }
 
 .footer-social-item {
-  position: relative;
-  left: -10px;
-  top: -5px;
   width: 40px;
   height: 40px;
   margin-right: 3px;
@@ -608,16 +595,15 @@ h4 {
 }
 
 .footer-social-link {
-  position: absolute;
+  display: flex;
   width: 40px;
   height: 40px;
   fill: #83B3D3;
+  align-items: center;
 }
 
 .footer-social-link svg {
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  margin: 0 auto;
 }
 
 .footer-social-link:hover {
@@ -635,9 +621,8 @@ h4 {
 }
 
 .footer-logo {
-  position: relative;
   width: 160px;
-  right: -22px;
+  margin-right: -22px;
   margin-left: auto;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -668,7 +653,6 @@ h4 {
 }
 
 .footer-contacts-phone {
-  position: relative;
   display: block;
   margin: 0 auto;
   font-size: 40px;
