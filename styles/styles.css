@@ -707,8 +707,8 @@ h4 {
   display: flex;
   margin: 0;
   padding: 0;
-  margin-top: 5px;
-  margin-bottom: 45px;
+  margin-top: 2px;
+  margin-bottom: 42px;
   font-size: 16px;
   line-height: 21px;
   list-style-type: none;
@@ -719,7 +719,7 @@ h4 {
   left: -8px;
   top: -3px;
   display: block;
-  padding: 0 8px;
+  padding: 3px 8px;
   margin-right: 10px;
 }
 
@@ -742,11 +742,70 @@ h4 {
   height: 8px;
   position: absolute;
   left: -15px;
-  top: -4px;
+  top: -1px;
+  opacity: 0.3;
 }
 
 
 /* Форма-фильтр */
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 39px;
+}
+
+/* Mark */
+.control-mark,
+.control-mark-radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.catalog-filter-type .control-mark,
+.catalog-filter-type .control-mark-radio {
+  border-radius: 50%;
+}
+
+.control:hover .control-mark {
+  opacity: 0.6;
+}
+
+.control:focus-within .control-mark,
+.control:focus-within .control-mark-radio {
+  outline: 3px solid #83B3D3;
+}
+
+.control:active .control-mark {
+  opacity: 0.3;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  background-image: url(../images/check-mark.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 4px;
+  top: 5px;
+  width: 13px;
+  height: 10px;
+  content: "";
+}
+
+.control-input[type="radio"]:checked + .control-mark-radio::after {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  content: "";
+  border-radius: 50%;
+}
 
 .catalog-filter {
   width: 1057px;
@@ -755,7 +814,7 @@ h4 {
 }
 
 .catalog-filter-title {
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -778,11 +837,6 @@ h4 {
   margin-right: 67px;
   padding: 0;
   border: 0;
-}
-
-.control-input[type="checkbox"] {
-  border-radius: 4px;
-  /* не работает ?? */
 }
 
 .catalog-filter-type {
@@ -808,6 +862,115 @@ h4 {
   padding: 0;
   border: 0;
 }
+
+/* Range */
+.range-scale {
+  position: relative;
+  height: 4px;
+  /* здесь другой формат цвета из-за того что opacity действует и на дочерние элементы */
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.range-toggle:hover {
+  box-shadow: 0px 4px 10px 0px #00000040;
+}
+
+.range-toggle:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.range-toggle:active {
+  outline: 2px solid #83B3D3;
+  box-shadow: 0px 7px 15px 0px #00000066;
+}
+
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.toggle-max {
+  top: -8px;
+  right: 0;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: center;
+  width: 287px;
+  margin-bottom: 32px;
+}
+
+.catalog-filter-label {
+  display: flex;
+  width: 50%;
+  color: rgba(255, 255, 255, 0.3);
+  justify-content: space-between;
+  padding: 12px 17px 10px;
+  box-sizing: border-box;
+}
+
+.catalog-filter-label:first-child {
+  border: 2px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+  border-radius: 4px 0 0 4px;
+}
+
+.catalog-filter-label:last-child {
+  border: 2px solid #FFFFFF;
+  border-left: 1px solid #FFFFFF;
+  border-radius: 0 4px 4px 0;
+}
+
+.range-input {
+  width: 60px;
+  font: inherit;
+  text-align: left;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+  padding: 0;
+  outline: none;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.catalog-filter-label:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.catalog-filter-label:focus-within {
+  border-color: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 3px #81B3D2;
+  outline: 3px solid #81B3D2;
+}
+
+.catalog-filter-label:active,
+.range-input:checked {
+  background-color: #756257;
+}
+/* Не получаетс сделать это состояние */
 
 .catalog-filter-button {
   display: flex;
@@ -948,6 +1111,11 @@ h4 {
   box-sizing: border-box;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
+  padding-right: 50px;
+  appearance: none;
+  background-image: url("../images/dropdown.svg");
+  background-repeat: no-repeat;
+  background-position: right 21px center;
 }
 
 .select-control:hover {
@@ -969,7 +1137,7 @@ h4 {
 .select-sort {
   width: 287px;
   margin-right: 81px;
-  padding-left: 19px;
+  padding: 12px 19px;
 }
 
 .filter-result {
@@ -1204,4 +1372,57 @@ a:focus .hotel-card-image {
 
 .newsletter-inner .newsletter-description {
   color: #333333;
+}
+
+/* Модальное окно */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #F2F2F2CC;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 70px;
+  padding-top: 62px;
+  background-color: #ffffff;
+  box-shadow: 0px 25px 50px 0px #00000026;
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+
+.modal-search-hotel {
+  width: 715px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 54px;
+  right: 70px;
+  width: 53px;
+  height: 53px;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 50%;
+  background-image: url("../images/modal-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 27px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  color: #000000;
+  text-transform: uppercase;
 }

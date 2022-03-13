@@ -200,5 +200,50 @@
         </div>
       </footer>
     </div>
+
+    <div class="modal-container">
+      <div class="modal modal-search-hotel">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        </section>
+
+        <form class="search-hotel-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="field-group appointment-form-date">
+
+              <label class="form-label" for="appointment-date">
+                Дата</label>
+
+
+            <input class="field" type="text" id="appointment-date" name="appointment-date" placeholder="01.01.2020">
+          </p>
+          <p class="field-group appointment-form-time">
+
+              <label class="form-label" for="appointment-time">
+                Время</label>
+
+
+            <input class="field" type="text" id="appointment-time" name="appointment-time" placeholder="10:00">
+          </p>
+          <p class="field-group appointment-form-phone">
+            <label class="form-label" for="appointment-phone">
+              Телефон
+            </label>
+            <input class="field" type="text" id="appointment-phone" name="appointment-phone" placeholder="+7 800 000-00-00">
+          </p>
+          <p class="field-group appointment-form-name">
+            <label class="form-label" for="appointment-name">
+              Ваше имя
+            </label>
+            <input class="field" type="text" id="appointment-name" name="appointment-name">
+          </p>
+          <button class="button appointment-submit" type="submit">Записаться</button>
+        </form>
+      </div>
+
+    </div>
   </body>
 </html>
