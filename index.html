@@ -203,6 +203,7 @@
 
     <div class="modal-container">
       <div class="modal modal-search-hotel">
+
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
         </button>
@@ -212,35 +213,45 @@
         </section>
 
         <form class="search-hotel-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="field-group appointment-form-date">
+          <p class="field-group search-hotel-form-date">
 
-              <label class="form-label" for="appointment-date">
-                Дата</label>
+            <label class="form-label" for="search-hotel-date">Дата въезда:</label>
+            <input class="field field-modal" type="text" id="search-hotel-date" name="search-hotel-date" placeholder="27 апреля 2020">
+            <p class="date-info date-incorrect">Мы не можем отправить вас в прошлое.</p>
 
-
-            <input class="field" type="text" id="appointment-date" name="appointment-date" placeholder="01.01.2020">
           </p>
-          <p class="field-group appointment-form-time">
 
-              <label class="form-label" for="appointment-time">
-                Время</label>
+          <p class="field-group search-hotel-form-date">
 
+            <label class="form-label" for="search-hotel-date">Дата выезда:</label>
+            <input class="field field-modal" type="text" id="search-hotel-date" name="search-hotel-date" placeholder="1 сентября 2021">
+            <p class="date-info date-correct">На эти даты есть свободные номера. Пока есть.</p>
 
-            <input class="field" type="text" id="appointment-time" name="appointment-time" placeholder="10:00">
           </p>
-          <p class="field-group appointment-form-phone">
-            <label class="form-label" for="appointment-phone">
-              Телефон
-            </label>
-            <input class="field" type="text" id="appointment-phone" name="appointment-phone" placeholder="+7 800 000-00-00">
+          <p class="field-group search-hotel-form-adult">
+
+            <label class="form-label" for="search-hotel-adult">Взрослые:</label>
+
+            <button class="minus visually-hidden">Минус взрослый</button>
+            <input class="field field-modal" type="text" id="search-hotel-adult" name="search-hotel-adult" placeholder="1">
+            <button class="plus visually-hidden">Плюс взрослый</button>
+
           </p>
-          <p class="field-group appointment-form-name">
-            <label class="form-label" for="appointment-name">
-              Ваше имя
-            </label>
-            <input class="field" type="text" id="appointment-name" name="appointment-name">
+
+          <p class="field-group search-hotel-form-children">
+
+            <label class="form-label" for="search-hotel-children"> Дети:</label>
+
+            <span class="tooltype-info">i</span>
+
+            <button class="minus visually-hidden">Минус ребёнок</button>
+            <input class="field field-modal minus-children" type="text" id="search-hotel-adult" name="search-hotel-children" placeholder="1">
+            <button class="plus visually-hidden">Плюс ребёнок</button>
+
           </p>
-          <button class="button appointment-submit" type="submit">Записаться</button>
+
+          <button class="button button-search search-hotel-submit" type="submit">Найти</button>
+
         </form>
       </div>
 
