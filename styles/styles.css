@@ -1457,6 +1457,10 @@ a:focus .hotel-card-image {
   grid-column: 1/-1;
 }
 
+.search-hotel-form-date .field-modal {
+  width: 420px;
+}
+
 .date-info {
   display: inline-block;
   grid-column: 2/-1;
@@ -1482,14 +1486,30 @@ a:focus .hotel-card-image {
   grid-column: 3/-1;
 }
 
+.tooltype-info {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #83B3D3;
+}
+
+.tooltype-info::before {
+  content: "";
+  top: 8;
+  left: 12;
+  position: absolute;
+  width: 1px;
+  height: 9px;
+  background-image: url(../images/info.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .field-modal {
   padding-left: 19px;
   padding-right: 19px;
   width: 133px;
-}
-
-.search-hotel-form-date .field-modal {
-  width: 420px;
 }
 
 .search-hotel-submit {
