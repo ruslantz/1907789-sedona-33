@@ -465,8 +465,9 @@ h4 {
 .newsletter-index {
   background-image: url("../images/background-newsletter.jpg");
   background-repeat: no-repeat;
+  background-color: #476b86;
+  background-size: 100% auto;
   color: #ffffff;
-  background-color: #000000;
 }
 
 .newsletter-title {
@@ -508,11 +509,13 @@ h4 {
   box-sizing: border-box;
 }
 
-.field:hover {
+.field:hover,
+.field-modal:hover {
   background-color: #E6E6E6;
 }
 
-.field:focus {
+.field:focus,
+.field-modal:focus {
   outline: 3px solid #83B3D3;
 }
 
@@ -1442,13 +1445,22 @@ a:focus .hotel-card-image {
 }
 
 .field-modal {
+  font-family: "PT Sans", sans-serif;
+  line-height: 40px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
   border-radius: 4px;
   padding: 5px 19px;
   padding-right: 50px;
   width: 133px;
-  line-height: 40px;
-  font-weight: 700;
-  color: #000000;
+  border: none;
+  background-color: #F2F2F2;
+  box-sizing: border-box;
+}
+
+.field-modal[type="date"]:invalid + .date-info {
+  color: #FF5757;
 }
 
 .search-hotel-form {
@@ -1520,6 +1532,10 @@ a:focus .hotel-card-image {
   height: 25px;
   border-radius: 50%;
   background-color: #83B3D3;
+}
+
+.tooltype-info:hover {
+  background: #68A2CA;
 }
 
 .tooltype-info::before {
