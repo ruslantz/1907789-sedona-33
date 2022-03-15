@@ -1393,6 +1393,7 @@ a:focus .hotel-card-image {
   width: 100%;
   height: 100%;
   background-color: #F2F2F2CC;
+/* display: none; */
 }
 
 .modal {
@@ -1459,10 +1460,6 @@ a:focus .hotel-card-image {
   box-sizing: border-box;
 }
 
-.field-modal[type="date"]:invalid + .date-info {
-  color: #FF5757;
-}
-
 .search-hotel-form {
   display: grid;
   grid-template-columns: 155px 133px 155px 133px;
@@ -1474,6 +1471,7 @@ a:focus .hotel-card-image {
 
 .field-group {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-top: 11px;
   justify-content: space-between;
@@ -1497,20 +1495,46 @@ a:focus .hotel-card-image {
 }
 
 .date-info {
-  display: inline-block;
-  grid-column: 2/-1;
+  display: block;
   margin: 0;
+  margin-left: 155px;
   font-weight: 400;
   font-size: 16px;
   line-height: 29px;
+  width: 420px;
+  height: 29px;
 }
 
-.date-incorrect {
+.date-invalid {
   color: #FF5757;
 }
 
-.date-correct {
+.date-valid {
   color: #333333;
+}
+
+.minus {
+
+  width: 45px;
+  border-radius: 4px 0 0 4px;
+}
+
+.button-minus {
+  margin: 0;
+  display: flex;
+  width: 25px;
+  height: 25px;
+  box-sizing: border-box;
+}
+
+.button-minus svg {
+  display: block;
+  margin: 0 auto;
+}
+
+.plus {
+  width: 45px;
+  border-radius: 0 4px 4px 0;
 }
 
 .search-hotel-form-adult {
@@ -1526,12 +1550,17 @@ a:focus .hotel-card-image {
   width: 54px;
 }
 
+.search-hotel-form-adult > .form-label {
+  margin-right: auto;
+}
+
 .tooltype-info {
   position: relative;
   width: 25px;
   height: 25px;
   border-radius: 50%;
   background-color: #83B3D3;
+  margin-right: 18px;
 }
 
 .tooltype-info:hover {
@@ -1550,10 +1579,13 @@ a:focus .hotel-card-image {
   background-position: center;
 }
 
-.minus-children {
-  margin-left: 18px;
+.field-modal-children,
+.field-modal-adult {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 43px;
+  text-align: center;
 }
-
 
 .search-hotel-submit {
   margin-top: 40px;

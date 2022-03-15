@@ -217,41 +217,60 @@
 
             <label class="form-label" for="search-hotel-date">Дата въезда:</label>
             <input class="field-modal" type="text" id="search-hotel-date" name="search-hotel-date" placeholder="27 апреля 2020">
-
-
+            <span class="date-info date-invalid">Мы не можем отправить вас в прошлое.</span>
           </p>
-          <p class="date-info date-incorrect">Мы не можем отправить вас в прошлое.</p>
+
 
           <p class="field-group search-hotel-form-date">
 
             <label class="form-label" for="search-hotel-date">Дата выезда:</label>
             <input class="field-modal" type="text" id="search-hotel-date" name="search-hotel-date" placeholder="1 сентября 2021">
-
+            <p class="date-info date-valid">На эти даты есть свободные номера. Пока есть.</p>
           </p>
-          <p class="date-info date-correct">На эти даты есть свободные номера. Пока есть.</p>
+
 
           <p class="field-group search-hotel-form-adult">
 
             <label class="form-label" for="search-hotel-adult">Взрослые:</label>
 
-            <button class="minus"> -
-              <div class="visually-hidden">Минус взрослый</div>
+            <button class="button minus" type="button">
+                <div class="visually-hidden">Минус взрослый</div>
+                <div class="button-minus">
+                <svg aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                </svg>
+              </div>
+
             </button>
 
-            <input class="field-modal" type="text" id="search-hotel-adult" name="search-hotel-adult" placeholder="1">
-            <button class="plus visually-hidden">Плюс взрослый</button>
+            <input class="field-modal field-modal-adult" type="text" id="search-hotel-adult" name="search-hotel-adult" placeholder="1">
+
+            <button class="button plus">
+              <div class="visually-hidden">Плюс взрослый</div>
+            </button>
 
           </p>
 
           <p class="field-group search-hotel-form-children">
 
-            <label class="form-label" for="search-hotel-children"> Дети:</label>
+            <label class="form-label" for="search-hotel-children">Дети:</label>
 
-              <span class="tooltype-info"></span>
+            <span class="tooltype-info"></span>
 
-            <button class="minus visually-hidden">Минус ребёнок</button>
-            <input class="field-modal minus-children" type="text" id="search-hotel-adult" name="search-hotel-children" placeholder="1">
-            <button class="plus visually-hidden">Плюс ребёнок</button>
+            <button class="button minus" type="button">
+              <div class="visually-hidden">Минус ребёнок</div>
+              <div class="button-minus">
+                <svg aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                </svg>
+              </div>
+            </button>
+
+            <input class="field-modal field-modal-children" type="text" id="search-hotel-adult" name="search-hotel-children" placeholder="1">
+
+            <button class="button plus">
+              <div class="visually-hidden">Плюс ребёнок</div>
+            </button>
 
           </p>
 
