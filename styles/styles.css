@@ -1513,17 +1513,21 @@ a:focus .hotel-card-image {
   color: #333333;
 }
 
-.minus {
-  width: 45px;
-  border-radius: 4px 0 0 4px;
-}
-
-.button-minus {
+.button-minus,
+.button-plus {
   margin: 0;
   display: flex;
   width: 25px;
   height: 25px;
   box-sizing: border-box;
+  align-items: center;
+}
+
+.minus {
+  display: flex;
+  justify-content: space-around;
+  width: 45px;
+  border-radius: 4px 0 0 4px;
 }
 
 .button-minus svg {
@@ -1532,8 +1536,15 @@ a:focus .hotel-card-image {
 }
 
 .plus {
+  display: flex;
+  justify-content: space-around;
   width: 45px;
   border-radius: 0 4px 4px 0;
+}
+
+.button-plus svg {
+  display: block;
+  margin: 0 auto;
 }
 
 .search-hotel-form-adult {
