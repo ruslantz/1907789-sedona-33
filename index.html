@@ -149,7 +149,7 @@
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="newsletter-email"></label>
             <div class="field-container">
-              <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+              <input class="field field-status" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
               <button class="button button-blue button-newsletter" type="submit">Подписаться</button>
             </div>
           </form>
@@ -216,7 +216,7 @@
           <p class="field-group search-hotel-form-date">
 
             <label class="form-label" for="search-hotel-date">Дата въезда:</label>
-            <input class="field-modal" type="text" id="search-hotel-date" name="search-hotel-date" placeholder="27 апреля 2020">
+            <input class="field-modal field-status" type="text" id="search-hotel-date" name="search-hotel-date" placeholder="27 апреля 2020">
             <span class="date-info date-invalid">Мы не можем отправить вас в прошлое.</span>
           </p>
 
@@ -224,62 +224,78 @@
           <p class="field-group search-hotel-form-date">
 
             <label class="form-label" for="search-hotel-date">Дата выезда:</label>
-            <input class="field-modal" type="text" id="search-hotel-date" name="search-hotel-date" placeholder="1 сентября 2021">
-            <p class="date-info date-valid">На эти даты есть свободные номера. Пока есть.</p>
+
+            <!-- остановился здесь делаю календарь!!!!!!!!!!!! -->
+            <span class="i">
+              <input class="field-modal field-status" type="text" id="search-hotel-date" name="search-hotel-date" placeholder="1 сентября 2021">
+              <button class="calendar" type="button">
+              </button>
+            </span>
+            <span class="date-info date-valid">На эти даты есть свободные номера. Пока есть.</span>
           </p>
 
 
-          <p class="field-group search-hotel-form-adult">
+          <div class="field-group search-hotel-form-adult">
 
             <label class="form-label" for="search-hotel-adult">Взрослые:</label>
 
-            <button class="button minus" type="button">
+            <div class="input-container">
+              <button class="button minus minus-plus-status" type="button">
                 <div class="visually-hidden">Минус взрослый</div>
                 <div class="button-minus">
-                <svg aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
-                </svg>
-              </div>
+                  <svg class="status-svg" aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                  </svg>
+                </div>
+              </button>
+              <input class="field-modal field-modal-adult" type="text" id="search-hotel-adult" name="search-hotel-adult" placeholder="1">
+              <button class="button plus minus-plus-status">
+                <div class="visually-hidden">Плюс взрослый</div>
+                <div class="button-plus">
+                  <svg class="status-svg" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
+                  </svg>
+                </div>
+              </button>
+            </div>
 
-            </button>
+          </div>
 
-            <input class="field-modal field-modal-adult" type="text" id="search-hotel-adult" name="search-hotel-adult" placeholder="1">
+          <div class="field-group search-hotel-form-children">
 
-            <button class="button plus">
-              <div class="visually-hidden">Плюс взрослый</div>
-            </button>
+            <span class="form-label">
+              <label class="form-label-children" for="search-hotel-children">Дети:</label>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                  <svg class="tooltip-icon" width="1" height="9" fill="none" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z"/></svg>
+                </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+            </span>
 
-          </p>
+            <div class="input-container">
+              <button class="button minus minus-plus-status" type="button">
+                <div class="visually-hidden">Минус ребёнок</div>
+                <div class="button-minus">
+                  <svg class="status-svg" aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                  </svg>
+                </div>
+              </button>
+              <input class="field-modal field-modal-children" type="text" id="search-hotel-adult" name="search-hotel-children" placeholder="1">
+              <button class="button plus minus-plus-status">
+                <div class="visually-hidden">Плюс ребёнок</div>
+                <div class="button-plus">
+                  <svg class="status-svg" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
+                  </svg>
+                </div>
+              </button>
+            </div>
 
-          <p class="field-group search-hotel-form-children">
+          </div>
 
-            <label class="form-label" for="search-hotel-children">Дети:</label>
-
-            <span class="tooltype-info"></span>
-
-            <button class="button minus" type="button">
-              <div class="visually-hidden">Минус ребёнок</div>
-              <div class="button-minus">
-                <svg aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
-                </svg>
-              </div>
-            </button>
-
-            <input class="field-modal field-modal-children" type="text" id="search-hotel-adult" name="search-hotel-children" placeholder="1">
-
-            <button class="button plus">
-              <div class="visually-hidden">Плюс ребёнок</div>
-              <div class="button-plus">
-                <svg aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
-                </svg>
-              </div>
-            </button>
-
-          </p>
-
-          <button class="button button-search search-hotel-submit" type="submit">Найти</button>
+          <button class="button button-search search-hotel-submit button-blue" type="submit">Найти</button>
 
         </form>
       </div>

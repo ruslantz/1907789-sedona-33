@@ -509,13 +509,11 @@ h4 {
   box-sizing: border-box;
 }
 
-.field:hover,
-.field-modal:hover {
+.field-status:hover {
   background-color: #E6E6E6;
 }
 
-.field:focus,
-.field-modal:focus {
+.field-status:focus {
   outline: 3px solid #83B3D3;
 }
 
@@ -525,19 +523,16 @@ h4 {
   box-shadow: inset 0 0 0 2px #FF5757;
 }
 
-.button-blue,
-.search-hotel-submit {
+.button-blue {
   background-color: #83B3D3;
 }
 
-.button-blue:hover,
-.search-hotel-submit:hover {
+.button-blue:hover {
   background-color: #68A2CA;
 }
 
 
-.button-blue:active,
-.search-hotel-submit:active {
+.button-blue:active {
   background-color: #68A2CA;
 }
 
@@ -1276,17 +1271,6 @@ a:focus .hotel-card-image {
   border-radius: 4px;
 }
 
-/* .rating-stars::before {
-  position: absolute;
-  left: 0;
-  content: url(../images/star-1.svg);
-  width: 90px;
-  height: 17px;
-  background-image: url(../images/star-1.svg);
-  background-repeat: repeat-x;
-  z-index: 2;
-} */
-
 .pagination-container {
   display: flex;
   position: relative;
@@ -1494,6 +1478,10 @@ a:focus .hotel-card-image {
   width: 420px;
 }
 
+.i {
+  display: block;
+}
+
 .date-info {
   display: block;
   margin: 0;
@@ -1523,11 +1511,34 @@ a:focus .hotel-card-image {
   align-items: center;
 }
 
+.input-container svg {
+  opacity: 0.3;
+}
+
+.minus-plus-status:hover .status-svg {
+  opacity: 1;
+}
+
+.minus-plus-status:focus:focus-visible .button-minus,
+.minus-plus-status:focus:focus-visible .button-plus {
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.minus-plus-status:active .status-svg {
+  opacity: 0.2;
+}
+
+.minus-plus-status:focus-visible {
+  outline: none;
+}
+
 .minus {
   display: flex;
   justify-content: space-around;
   width: 45px;
-  border-radius: 4px 0 0 4px;
+  background-color: #F2F2F2;
+  align-items: center;
 }
 
 .button-minus svg {
@@ -1539,7 +1550,8 @@ a:focus .hotel-card-image {
   display: flex;
   justify-content: space-around;
   width: 45px;
-  border-radius: 0 4px 4px 0;
+  background-color: #F2F2F2;
+  align-items: center;
 }
 
 .button-plus svg {
@@ -1556,7 +1568,7 @@ a:focus .hotel-card-image {
   grid-column: 3/-1;
 }
 
-.search-hotel-form-children .form-label {
+.form-label-children {
   width: 54px;
 }
 
@@ -1564,20 +1576,74 @@ a:focus .hotel-card-image {
   margin-right: auto;
 }
 
-.tooltype-info {
+.form-label {
+  display: flex;
+  align-items: center;
+  margin-right: 18px;
+}
+
+.tooltip {
   position: relative;
+  display: block;
+  margin: 0;
+}
+
+.tooltip-toggle  {
   width: 25px;
   height: 25px;
   border-radius: 50%;
   background-color: #83B3D3;
-  margin-right: 18px;
+  border: none;
+  padding: 0;
+  display: block;
 }
 
-.tooltype-info:hover {
+.tooltip-icon {
+  fill: #ffffff;
+}
+
+.tooltip-toggle:hover {
   background: #68A2CA;
 }
 
-.tooltype-info::before {
+.tooltip-text::before {
+  position: absolute;
+  content: "";
+  width: 19px;
+  height: 9px;
+  background-image: url(../images/triangle-tooltipe.svg);
+  background-repeat: no-repeat;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip-text {
+  position: absolute;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: none;
+  padding: 15px 18px 18px 22px;
+  border-radius: 10px;
+  display: block;
+  width: 256px;
+  box-shadow: 0px 15px 30px 0px #0000004D;
+  margin-top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: none;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+/* .tooltipe-info::before {
   content: "";
   top: 8px;
   left: 12px;
@@ -1587,7 +1653,7 @@ a:focus .hotel-card-image {
   background-image: url(../images/info.svg);
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 
 .field-modal-children,
 .field-modal-adult {
@@ -1595,9 +1661,15 @@ a:focus .hotel-card-image {
   padding-right: 5px;
   width: 43px;
   text-align: center;
+  z-index: 1;
 }
 
 .search-hotel-submit {
   margin-top: 40px;
 }
 
+.input-container {
+  display: flex;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+}
