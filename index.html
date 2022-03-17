@@ -220,7 +220,7 @@
             <label class="form-label" for="search-hotel-date">Дата въезда:</label>
 
             <span class="field-date-container">
-              <input class="field-modal field-status" type="text" id="search-hotel-date" name="search-hotel-date" placeholder="27 апреля 2020">
+              <input class="field-modal field-status" type="text" id="search-hotel-date-in" name="search-hotel-date" placeholder="27 апреля 2020">
               <button class="calendar" type="button">
                 <span class="visually-hidden">Календарь</span>
               </button>
@@ -234,7 +234,7 @@
             <label class="form-label" for="search-hotel-date">Дата выезда:</label>
 
             <span class="field-date-container">
-              <input class="field-modal field-status" type="text" id="search-hotel-date" name="search-hotel-date" placeholder="1 сентября 2021">
+              <input class="field-modal field-status" type="text" id="search-hotel-date-out" name="search-hotel-date" placeholder="1 сентября 2021">
               <button class="calendar" type="button">
                 <span class="visually-hidden">Календарь</span>
               </button>
@@ -249,21 +249,21 @@
 
             <div class="input-container">
               <button class="button minus minus-plus-status" type="button">
-                <div class="visually-hidden">Минус взрослый</div>
-                <div class="button-minus">
+                <span class="visually-hidden">Минус взрослый</span>
+                <span class="button-minus">
                   <svg class="status-svg" aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
                   </svg>
-                </div>
+                </spa>
               </button>
               <input class="field-modal field-modal-adult" type="text" id="search-hotel-adult" name="search-hotel-adult" placeholder="1">
               <button class="button plus minus-plus-status">
-                <div class="visually-hidden">Плюс взрослый</div>
-                <div class="button-plus">
+                <span class="visually-hidden">Плюс взрослый</span>
+                <span class="button-plus">
                   <svg class="status-svg" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
                   </svg>
-                </div>
+                </span>
               </button>
             </div>
 
@@ -275,7 +275,7 @@
               <label class="form-label-children" for="search-hotel-children">Дети:</label>
               <span class="tooltip">
                 <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
-                  <svg class="tooltip-icon" width="1" height="9" fill="none" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z"/></svg>
+                  <svg class="tooltip-icon" width="1" height="9" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z"/></svg>
                 </button>
                 <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
               </span>
@@ -283,21 +283,21 @@
 
             <div class="input-container">
               <button class="button minus minus-plus-status" type="button">
-                <div class="visually-hidden">Минус ребёнок</div>
-                <div class="button-minus">
+                <span class="visually-hidden">Минус ребёнок</span>
+                <span class="button-minus">
                   <svg class="status-svg" aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
                   </svg>
-                </div>
+                </span>
               </button>
-              <input class="field-modal field-modal-children" type="text" id="search-hotel-adult" name="search-hotel-children" placeholder="1">
+              <input class="field-modal field-modal-children" type="text" id="search-hotel-children" name="search-hotel-children" placeholder="1">
               <button class="button plus minus-plus-status">
-                <div class="visually-hidden">Плюс ребёнок</div>
-                <div class="button-plus">
+                <span class="visually-hidden">Плюс ребёнок</span>
+                <span class="button-plus">
                   <svg class="status-svg" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
                   </svg>
-                </div>
+                </span>
               </button>
             </div>
 

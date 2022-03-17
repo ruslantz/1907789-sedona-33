@@ -1720,5 +1720,5 @@ a:focus:focus-visible .hotel-card-image {
 }
 
 .modal-container-close {
-  display: none;
+  /* display: none; */
 }
