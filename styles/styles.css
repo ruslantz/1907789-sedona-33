@@ -1211,6 +1211,7 @@ a:focus:focus-visible .hotel-card-image {
 }
 
 .frame-hotel-price {
+  display: flex;
   margin: 0;
   color: #333333;
 }
@@ -1248,6 +1249,11 @@ a:focus:focus-visible .hotel-card-image {
   display: inline-block;
   width: 133px;
   margin-right: 25px;
+}
+
+.frame-price {
+  display: inline-block;
+  width: 133px;
 }
 
 .frame-stars {
