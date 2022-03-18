@@ -248,6 +248,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-image: url("../images/index-background.jpg");
+  background-color: #476b86;
   width: 1200px;
   background-repeat: no-repeat;
   padding-top: 51px;
@@ -482,7 +483,7 @@ body {
 }
 
 .newsletter-form {
-  margin-bottom: 94px;
+  margin-bottom: 140px;
 }
 
 .field-container {
@@ -702,7 +703,7 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   color: #ffffff;
-  background-color: #000000;
+  background-color: #476b86;
   width: 1200px;
   padding-top: 39px;
   margin-bottom: 44px;
@@ -841,7 +842,7 @@ body {
 }
 
 .catalog-filter-title {
-  margin-bottom: 34px;
+  margin-bottom: 32px;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
