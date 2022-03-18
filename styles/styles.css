@@ -466,6 +466,7 @@ body {
   background-color: #476b86;
   background-size: 100% auto;
   color: #ffffff;
+  padding-bottom: 94px;
 }
 
 .newsletter-title {
@@ -480,10 +481,6 @@ body {
   line-height: 26px;
   margin: 0;
   margin-bottom: 46px;
-}
-
-.newsletter-form {
-  margin-bottom: 140px;
 }
 
 .field-container {
@@ -1399,6 +1396,7 @@ a:focus:focus-visible .hotel-card-image {
 .newsletter-inner {
   text-align: center;
   padding-top: 73px;
+  padding-bottom: 140px;
 }
 
 .newsletter-inner .newsletter-title {
