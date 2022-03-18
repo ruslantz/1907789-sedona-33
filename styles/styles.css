@@ -587,7 +587,7 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  margin-left: -12px;
+  margin-left: 12px;
 }
 
 .footer-social-item:nth-child(3n) {
@@ -704,7 +704,7 @@ body {
   color: #ffffff;
   background-color: #000000;
   width: 1200px;
-  padding-top: 35px;
+  padding-top: 39px;
   margin-bottom: 44px;
 }
 
@@ -719,6 +719,7 @@ body {
 
 .inner-header {
   margin-left: 66px;
+  margin-bottom: 45px;
 }
 
 /* Хлебные крошки */
@@ -726,7 +727,6 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  margin-bottom: 44px;
   font-size: 16px;
   line-height: 21px;
   list-style-type: none;
@@ -830,6 +830,10 @@ body {
   border-radius: 50%;
 }
 
+.catalog-hotels-filter {
+  padding-bottom: 83px;
+}
+
 .catalog-filter {
   width: 1057px;
   display: flex;
@@ -841,6 +845,7 @@ body {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
+  padding: 0;
 }
 
 .catalog-filter-item:not(:last-child) {
@@ -937,7 +942,7 @@ body {
   display: flex;
   justify-content: center;
   width: 287px;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 }
 
 .catalog-filter-label {
@@ -1037,8 +1042,7 @@ body {
   text-transform: none;
   background: none;
   border: none;
-  padding: 4px 14px 5px 13px;
-  margin-bottom: 77px;
+  padding: 4px 14px 0 13px;
 }
 
 .button-reset:hover {
@@ -1061,6 +1065,7 @@ body {
   display: flex;
   margin: 0 auto;
   margin-bottom: 56px;
+  align-items: center;
 }
 
 .card-grid-toggle {
