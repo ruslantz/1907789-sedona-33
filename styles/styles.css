@@ -1069,6 +1069,13 @@ body {
   align-items: center;
 }
 
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 170px;
+  justify-content: end;
+}
+
 .card-grid-toggle {
   width: 48px;
   height: 48px;
@@ -1166,7 +1173,7 @@ body {
 
 .select-sort {
   width: 287px;
-  margin-right: 81px;
+  margin-right: 71px;
   padding: 12px 19px;
 }
 
