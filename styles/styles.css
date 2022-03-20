@@ -170,6 +170,10 @@ body {
   fill: #7562574D;
 }
 
+.navigation-link:active .count {
+  opacity: 0.3;
+}
+
 .count-favorites {
   position: absolute;
   top: 15px;
@@ -997,7 +1001,6 @@ body {
 .range-input:checked {
   background-color: #756257;
 }
-/* Не получаетс сделать это состояние */
 
 .catalog-filter-button {
   display: flex;
