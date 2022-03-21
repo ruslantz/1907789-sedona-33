@@ -1341,6 +1341,7 @@ a:focus:focus-visible .hotel-card-image {
 }
 
 .pagination-inner {
+  position: relative;
   display: flex;
   width: 1057px;
   margin: 0 auto;
@@ -1369,7 +1370,7 @@ a:focus:focus-visible .hotel-card-image {
   padding-bottom: 17px;
 }
 
-.pagination-show-more::after {
+.pagination-inner::before {
   display: block;
   position: absolute;
   content: "";
@@ -1377,7 +1378,7 @@ a:focus:focus-visible .hotel-card-image {
   background: #E6E6E6;
   width: 1056px;
   left: 0;
-  top: 90px;
+  top: -30px;
 }
 
 .pagination {
