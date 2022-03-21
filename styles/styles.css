@@ -361,27 +361,26 @@ body {
 }
 
 .advices-title-housing::before {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 220px;
   content: url(../images/icon-housing.svg);
+  top: 89px;
 }
 
 .advices-title-eat::before {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 220px;
   content: url(../images/icon-eat.svg);
+  top: 91px;
 }
 
+.advices-title-gifts::before {
+  content: url(../images/icon-gifts.svg);
+  top: 85px;
+}
+
+.advices-title-housing::before,
+.advices-title-eat::before,
 .advices-title-gifts::before {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 220px;
-  content: url(../images/icon-gifts.svg);
 }
 
 .advices-title {
@@ -1154,6 +1153,7 @@ body {
   background-image: url("../images/dropdown.svg");
   background-repeat: no-repeat;
   background-position: right 21px center;
+  background-color: #ffffff;
 }
 
 .select-control:hover {
