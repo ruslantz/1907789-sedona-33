@@ -721,7 +721,7 @@ body {
 
 .inner-header {
   margin-left: 66px;
-  margin-bottom: 45px;
+  margin-bottom: 44px;
 }
 
 /* Хлебные крошки */
@@ -842,6 +842,19 @@ body {
   margin: 0 auto;
 }
 
+.catalog-filter-container-left {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-filter-container-right {
+  width: 557px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
 .catalog-filter-title {
   margin-bottom: 32px;
   font-size: 20px;
@@ -872,7 +885,7 @@ body {
 .catalog-filter-type {
   width: 180px;
   margin: 0;
-  margin-right: auto;
+  margin-right: 67px;
   padding: 0;
   border: 0;
 }
@@ -944,7 +957,11 @@ body {
   display: flex;
   justify-content: center;
   width: 287px;
-  margin-bottom: 31px;
+  margin-bottom: 28px;
+}
+
+.catalog-filter-price .catalog-filter-title {
+  margin-bottom: 34px;
 }
 
 .catalog-filter-label {
@@ -952,7 +969,7 @@ body {
   width: 50%;
   color: rgba(255, 255, 255, 0.3);
   justify-content: space-between;
-  padding: 12px 17px 10px;
+  padding: 11px 17px 10px;
   box-sizing: border-box;
 }
 
