@@ -207,8 +207,8 @@ body {
   cursor: pointer;
   border-radius: 4px;
   box-sizing: border-box;
-  padding-top: 9px;
-  padding-bottom: 9px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .button:active {
@@ -635,7 +635,7 @@ body {
 
 .footer-logo {
   width: 160px;
-  margin-left: auto;
+  margin-left: 140px;
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -856,7 +856,7 @@ body {
 }
 
 .catalog-filter-title {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -1082,7 +1082,7 @@ body {
   width: 1057px;
   display: flex;
   margin: 0 auto;
-  margin-bottom: 56px;
+  margin-bottom: 53px;
   align-items: center;
 }
 
@@ -1191,8 +1191,8 @@ body {
 
 .select-sort {
   width: 287px;
-  margin-right: 71px;
-  padding: 12px 19px;
+  margin-right: 81px;
+  padding: 11px 19px;
 }
 
 .filter-result {
@@ -1324,8 +1324,8 @@ a:focus:focus-visible .hotel-card-image {
   font-size: 16px;
   line-height: 21px;
   text-align: center;
-  padding-top: 9px;
-  padding-bottom: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   text-transform: uppercase;
   margin-left: auto;
   border-radius: 4px;
